@@ -83,11 +83,10 @@ class Formulaire{
         } else {
             if (!filter_var($url, FILTER_VALIDATE_URL) === true) {
                 echo("$url n'est pas une URL valide");
-            } 
-            
+            }    
         }
     }
-    
+    /**test**/
     function ValiderMail($mail){
         
     }
