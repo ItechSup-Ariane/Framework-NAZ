@@ -84,12 +84,12 @@ class Formulaire{
             if (!filter_var($url, FILTER_VALIDATE_URL) === true) {
                 echo("$url n'est pas une URL valide");
             } 
+            
         }
     }
     
     function ValiderMail($mail){
         
-    
     }
 
     
