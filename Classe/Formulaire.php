@@ -39,7 +39,7 @@ class Formulaire{
             
         } else {
             foreach($this->widgets as $key =>$widget){
-                $type = get_class($widget);
+                /**$type = get_class($widget);
                 switch($type){
                     case 'PhpWidget\Widget\WDate':
                         
@@ -51,47 +51,12 @@ class Formulaire{
                         $this->ValiderNum($tab[$key]);
                     case 'PhpWidget\Widget\WText\WUrl':
                         $this->ValiderUrl($tab[$key]);
-                }
+                }**/
+                $widget->valider($tab[$key], $widget);
             }
-            
-        }   
-        
+        }    
     }
-    /**Validation**/
-    function ValiderNum($num){
-        $long = strlen($num);
-        if ($long == '') {
-            echo 'Le numero est vide. ';
-        } else {
-            if ($long < 10) {
-                echo 'Le numero est trop court. ';
-            } else{
-                if ($long > 10){
-                    echo 'Le numero est trop long. ';
-                }
-            }
-            if (is_numeric($num) == false) {
-                echo 'Le numero ne doit contenir que des chiffres. ';
-            }
-        }
-    }
-    
-    
-    function ValiderUrl($url){
-        if (empty($url){
-            echo 'L URL est vide';
-        } else {
-            if (!filter_var($url, FILTER_VALIDATE_URL) === true) {
-                echo("$url n'est pas une URL valide");
-            }    
-        }
-    }
-    /**test**/
-    function ValiderMail($mail){
-        
-    }
-
-    
+       
 }
     
 ?>
