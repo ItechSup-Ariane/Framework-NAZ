@@ -35,6 +35,10 @@
     $fTest->addWidget($test2, 'Url Test : ');
     $test3 = new PhpWidget\Widget\WText\WMail('mail');
     $fTest->addWidget($test3, 'Mail Test : ');
+    
+    $test4 = new PhpWidget\Widget\Collection\WReponse('reponse');
+    $fTest->addWidget($test4, 'Reponse test : ');
+    
     $test = $fTest->render();
     echo $test;
     $tab = array();
