@@ -3,10 +3,10 @@ namespace PhpWidget\Widget\Collection;
 use PhpWidget\Widget\Widget;
 
 class WFiliere extends Widget{
-    private $classes = Array();
-    
+    /**Création d'un tableau de "filières" **/
+    private $classes = Array();  
     public function __construct($name = 'filiere', $bloquage = true, $textDefaut = 'Classe :'){
-        /**ajout de classes en dur**/
+        /**ajout de filières en dur**/
         $this->classes[1] = 'Informatique';
         $this->classes[2] = 'MUC';
         $this->classes[3] = 'NRC';
@@ -16,9 +16,11 @@ class WFiliere extends Widget{
         foreach($this->classes as $classe){
             $code = $code . "<option value =".$classe.">".$classe."</option>";
         }
-        $code = "</select>";    
+        $code = $code . "</select>";
+        /**Appel du constructeur de l'objet widget**/
         parent::__construct($code, $bloquage, $textDefaut ,$name);
     }
+    /**Fonction de validation du widget**/
     public function valider($val, $widget){
         
         

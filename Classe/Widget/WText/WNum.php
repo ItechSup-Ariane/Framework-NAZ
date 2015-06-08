@@ -3,8 +3,9 @@
 namespace PhpWidget\Widget\WText;
 
 class WNum extends WText{
-    
+    /**Constructeur**/
     public function __construct($name = 'Num', $bloquage = true, $textDefaut = 'Entrez votre numero de telephone ' ){
+        /**Appel du constructeur de l'objet parent (WText)**/
         parent::__construct($bloquage, $textDefaut ,$name);
     }
     /**Fonction Validation du widget**/
