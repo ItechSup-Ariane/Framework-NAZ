@@ -9,7 +9,6 @@ namespace PhpWidget\Widget;
     */
 abstract class Widget
 {
-   
     /**Code HTML du Widget contenu dans les différents types de Widget**/
     private $codeWidget;
     /**Définis si l'absence de valeur dans le champs est bloquant ou non (contenu dans les type widget)**/
@@ -17,7 +16,6 @@ abstract class Widget
     private $valeurDefaut;
     private $nameWidget;
     private $labelWidget;
-    
     /**
     * Méthode constructeur de l'objet Widget.
     * @param codeWidget Code HTML affecté en fonction du type de widget
@@ -27,7 +25,6 @@ abstract class Widget
     */
     public function __construct($codeWidget, $bloquageWidget, $valeurDefaut, $nameWidget)
     {
-        
         $this->codeWidget = $codeWidget;
         $this->bloquageWidget = $bloquageWidget;
         $this->valeurDefaut = $valeurDefaut;

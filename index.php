@@ -39,6 +39,7 @@
     $fTest->addWidget($test3, 'Mail Test : ');
     $test4 = new PhpWidget\Widget\Collection\WReponse('reponse');
     $fTest->addWidget($test4, 'Reponse test : ');
+    
     $test5 = new PhpWidget\Widget\Collection\WFiliere('filiere');
     $fTest->addWidget($test5, 'Filiere test : ');
     $test = $fTest->render();

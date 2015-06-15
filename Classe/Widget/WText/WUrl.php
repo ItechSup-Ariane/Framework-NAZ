@@ -30,7 +30,7 @@ class WUrl extends WText
             echo $widget->getLabelWidget().'Le champs est vide, veuillez le remplir.'."<br />\n";
         } else { /**Test si l'url est valide **/
             if (!filter_var($val, FILTER_VALIDATE_URL) === true) {
-                echo $val." n'est pas une URL valide"."<br />\n";
+                echo $val." L'URL n'est pas valide"."<br />\n";
             }
         }
     }

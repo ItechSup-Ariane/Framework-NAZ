@@ -5,7 +5,6 @@ namespace PhpWidget;
 /**
 * Cette Classe est la classe créant le formulaire et contenant les fonctions d'affichage.
 */
-
 class Formulaire
 {
     /**Création du tableau de widget**/   
@@ -35,18 +34,16 @@ class Formulaire
         $str = $str . '</br><input type="submit" value="Envoyer" /></form>';
         return $str;
     }
-
     /**
     * Cette fonction ajoute un widget au tableau de widget associé au formulaire
-    * @param widget widget à ajouter
-    * @param nom nom à donner au widget
+    * @param widget Widget à ajouter
+    * @param nom Nom à donner au widget
     */
     public function addWidget($widget, $nom) 
     {
         $widget->setLabelWidget($nom);
         $key = $widget->getNameWidget();
         $this->widgets[$key] = $widget;
-        
     }
     /**
     * Cette fonction est un accesseur qui permet de récuperer l'instance widget.
@@ -73,19 +70,6 @@ class Formulaire
         } else {
             /**Parcourir les widgets**/
             foreach ($this->widgets as $key =>$widget) {
-                /**$type = get_class($widget);
-                switch($type){
-                    case 'PhpWidget\Widget\WDate':
-                        
-                    case 'PhpWidget\Widget\WText\WMail':
-                        $this->ValiderMail($tab[$key]);
-                    case 'PhpWidget\Widget\WText\WNom':
-                        
-                    case 'PhpWidget\Widget\WText\WNum':
-                        $this->ValiderNum($tab[$key]);
-                    case 'PhpWidget\Widget\WText\WUrl':
-                        $this->ValiderUrl($tab[$key]);
-                }**/
                 /**Appel de la fonction de validation du widget séléctionné **/
                 $widget->valider($tab[$key], $widget);
             }
