@@ -1,12 +1,14 @@
 <?php
 
 namespace PhpWidget\Widget;
+
     /**
     * Class de l'objet Widget
     * @param str Chaîne à afficher
     * @return un booléen valant True si l'affichage c'est bien passé, False sinon
     */
-abstract class Widget {
+abstract class Widget
+{
    
     /**Code HTML du Widget contenu dans les différents types de Widget**/
     private $codeWidget;
@@ -23,7 +25,8 @@ abstract class Widget {
     * @param valeurDefaut Contient la valeur par défaut du champs du widget.
     * @param nameWidget Contient le nom du Widget
     */
-    public function __construct($codeWidget, $bloquageWidget, $valeurDefaut, $nameWidget){
+    public function __construct($codeWidget, $bloquageWidget, $valeurDefaut, $nameWidget)
+    {
         
         $this->codeWidget = $codeWidget;
         $this->bloquageWidget = $bloquageWidget;

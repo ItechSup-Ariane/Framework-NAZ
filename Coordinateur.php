@@ -2,7 +2,8 @@
 
 namespace PhpWidget;
 
-class Coordinateur{
+class Coordinateur
+{
     
  /**   public $titre = ;    **/
 /**public $widgets = $titre->getWidgets();**/

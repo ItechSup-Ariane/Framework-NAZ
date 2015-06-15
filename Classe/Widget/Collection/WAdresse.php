@@ -1,6 +1,8 @@
-s<?php
+<?php
+
 namespace PhpWidget\Widget\Collection;
 
-class WAdresse extends CollectionWidget{
+class WAdresse extends CollectionWidget
+{
     //put your code here
 }
