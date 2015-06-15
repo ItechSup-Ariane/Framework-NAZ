@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class PhpWidget\Formulaire</title>
+
+	<link rel="stylesheet" href="resources/style.css">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-PhpWidget.html">
+						PhpWidget<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpWidget.Validateur.html">
+						Validateur					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpWidget.Widget.html">
+						Widget<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-PhpWidget.Widget.Collection.html">
+						Collection					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PhpWidget.Widget.WText.html">
+						WText					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-PhpWidget.Formulaire.html">Formulaire</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-PhpWidget.html" title="Summary of PhpWidget"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Formulaire</h1>
+
+
+	<div class="description">
+	<p>Cette Classe est la classe créant le formulaire et contenant les fonctions d'affichage.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-PhpWidget.html">PhpWidget</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-PhpWidget.Formulaire.html#6-87" title="Go to source code">Classe/Formulaire.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-PhpWidget.Formulaire.html#14-21" title="Go to source code">__construct</a>( <span>nom <var>$nom</var></span> )</code>
+
+		<div class="description short">
+			<p>Cette fonction est le constructeur de l'objet Formulaire.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Cette fonction est le constructeur de l'objet Formulaire.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$nom</var></dt>
+					<dd>le nom du questionnaire.</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="render" id="_render">
+
+		<td class="attributes"><code>
+			 public 
+
+			une
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_render">#</a>
+		<code><a href="source-class-PhpWidget.Formulaire.html#22-37" title="Go to source code">render</a>( )</code>
+
+		<div class="description short">
+			<p>Cette fonction permet la mise en forme du code HTML en parcourant les widgets.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Cette fonction permet la mise en forme du code HTML en parcourant les widgets.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					une<br>chaine de caractère qui contient le code HTML
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addWidget" id="_addWidget">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addWidget">#</a>
+		<code><a href="source-class-PhpWidget.Formulaire.html#39-50" title="Go to source code">addWidget</a>( <span>widget <var>$widget</var></span>, <span>nom <var>$nom</var></span> )</code>
+
+		<div class="description short">
+			<p>Cette fonction ajoute un widget au tableau de widget associé au formulaire</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Cette fonction ajoute un widget au tableau de widget associé au formulaire</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$widget</var></dt>
+					<dd>à ajouter</dd>
+					<dt><var>$nom</var></dt>
+					<dd>à donner au widget</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getWidgets" id="_getWidgets">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWidgets">#</a>
+		<code><a href="source-class-PhpWidget.Formulaire.html#51-53" title="Go to source code">getWidgets</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTitre" id="_getTitre">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTitre">#</a>
+		<code><a href="source-class-PhpWidget.Formulaire.html#54-56" title="Go to source code">getTitre</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="validerWidget" id="_validerWidget">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_validerWidget">#</a>
+		<code><a href="source-class-PhpWidget.Formulaire.html#57-85" title="Go to source code">validerWidget</a>( <span>tab <var>$tab</var></span> )</code>
+
+		<div class="description short">
+			<p>Cette fonction appel la validation des réponses soumise par le formulaire</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Cette fonction appel la validation des réponses soumise par le formulaire</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$tab</var></dt>
+					<dd>contenant les valeurs entrées dans les widget par methode $_POST</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

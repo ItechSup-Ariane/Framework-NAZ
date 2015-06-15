@@ -2,6 +2,10 @@
 
 namespace PhpWidget\Widget\WText;
 
+/**
+* Classe WMail héritant de la classe WText, sert à récupérer une adresse Email.
+*/
+
 class WMail extends WText
 {
     
@@ -9,8 +13,12 @@ class WMail extends WText
     {
         parent::__construct($bloquage, $textDefaut ,$name);
     }
-    /**Fonction Validation du widget**/
-     public function valider($val, $widget)
+    /**
+    * Methode de validation du widget WMail, test si l'adresse Email est valide.
+    * @param val Contient la valeur entrée dans le widget.
+    * @param widget Instance du widget.
+    */
+    public function valider($val, $widget)
     {
          /**Test si vide et compare avec le booléen blocage**/
         if (empty($val) && $widget->getBloquageWidget() == true) {

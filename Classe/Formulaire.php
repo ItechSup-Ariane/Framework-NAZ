@@ -48,10 +48,18 @@ class Formulaire
         $this->widgets[$key] = $widget;
         
     }
-    public function getWidgets(){
+    /**
+    * Cette fonction est un accesseur qui permet de récuperer l'instance widget.
+    */
+    public function getWidgets()
+    {
         return $this->widgets;
     }
-    public function getTitre(){
+    /**
+    * Cette fonction est un accesseur qui permet de récuperer le titre du formulaire.
+    */
+    public function getTitre()
+    {
         return $this->titre;
     }
     /**

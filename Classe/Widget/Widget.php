@@ -3,7 +3,7 @@
 namespace PhpWidget\Widget;
 
     /**
-    * Class de l'objet Widget
+    * Classe de l'objet Widget, classe abstraite parente de tous les types de widgets.
     * @param str Chaîne à afficher
     * @return un booléen valant True si l'affichage c'est bien passé, False sinon
     */
@@ -35,47 +35,78 @@ abstract class Widget
     }
     
     /**
-    * Méthodes d'acesseurs
+    * Cette fonction est un accesseur qui permet de récuperer le code HTML du widget.
     */
-    function getCodeWidget() {
+    function getCodeWidget()
+    {
         return $this->codeWidget;
     }
-    
-    function getNameWidget() {
+    /**
+    * Cette fonction est un accesseur qui permet de récuperer le nom du widget.
+    */
+    function getNameWidget()
+    {
         return $this->nameWidget;
     }
-    
-    function getBloquageWidget() {
+    /**
+    * Cette fonction est un accesseur qui permet de savoir si l'absence de réponse est bloquante pour le widget.
+    */
+    function getBloquageWidget()
+    {
         return $this->bloquageWidget;
     }
-
-    function getValeurDefaut() {
+    /**
+    * Cette fonction est un accesseur qui permet de récuperer la valeur par defaut du widget.
+    */
+    function getValeurDefaut()
+    {
         return $this->valeurDefaut;
     }
-
-    function getLabelWidget() {
+    /**
+    * Cette fonction est un accesseur qui permet de récuperer le label du widget.
+    */
+    function getLabelWidget()
+    {
         return $this->labelWidget;
     }
-
-    function setCodeWidget($codeWidget) {
+    /**
+    * Cette fonction est un accesseur qui permet d'attribuer une valeur au code du widget.
+    * @param codeWidget Le code à attribuer au widget.
+    */
+    function setCodeWidget($codeWidget)
+    {
         $this->codeWidget = $codeWidget;
     }
-
-    function setBloquageWidget($bloquageWidget) {
+    /**
+    * Cette fonction est un accesseur qui permet de définir bloquage du widget.
+    * @param bloquageWidget Booléen à définissant le bloquage ou non du widget.
+    */
+    function setBloquageWidget($bloquageWidget)
+    {
         $this->bloquageWidget = $bloquageWidget;
     }
-
-    function setValeurDefaut($valeurDefaut) {
+    /**
+    * Cette fonction est un accesseur qui permet d'attribuer une valeur par défaut au widget.
+    * @param valeurDefaut Valeur à attribuer au widget.
+    */
+    function setValeurDefaut($valeurDefaut)
+    {
         $this->valeurDefaut = $valeurDefaut;
     }
-
-    function setLabelWidget($labelWidget) {
+    /**
+    * Cette fonction est un accesseur qui permet d'attribuer un label au widget.
+    * @param labelWidget Label à attribuer au widget.
+    */
+    function setLabelWidget($labelWidget)
+    {
         $this->labelWidget = $labelWidget;
     }
-    
-    function setNameWidget($nameWidget) {
+    /**
+    * Cette fonction est un accesseur qui permet d'attribuer un nom au widget.
+    * @param nameWidget Le nom à attribuer au widget.
+    */
+    function setNameWidget($nameWidget)
+    {
         $this->nameWidget = $nameWidget;
     }
-
-
 }

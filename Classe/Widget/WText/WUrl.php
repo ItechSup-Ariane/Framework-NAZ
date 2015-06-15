@@ -2,14 +2,27 @@
 
 namespace PhpWidget\Widget\WText;
 
+/**
+* Classe de l'objet WUrl héritant de l'objet WText, qui sert à récupérer une URL.
+*/
 class WUrl extends WText
 {
+    /**
+    * Méthode constructeur de l'objet WUrl.
+    * @param bloquage Définis si l'absence de valeur dans le champs est bloquant ou non 
+    * @param textDefaut Contient la valeur par défaut du champs du widget.
+    * @param name Contient le nom du Widget
+    */
     public function __construct($name = 'URL', $bloquage = false, $textDefaut = 'Entrez votre adresse URL ')
     {
         parent::__construct($bloquage, $textDefaut ,$name);
     }
     
-    /**Fonction Validation du widget**/
+    /**
+    * Méthode de validation de l'objet WUrl, test si l'url est valide.
+    * @param val Contient la valeur entrée de le widget WUrl
+    * @param widget Contient l'objet widget
+    */
     public function valider($val, $widget)
     {
         /**Test si vide et compare avec le booléen blocage**/

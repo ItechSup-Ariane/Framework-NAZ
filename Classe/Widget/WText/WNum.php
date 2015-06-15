@@ -2,15 +2,28 @@
 
 namespace PhpWidget\Widget\WText;
 
+/**
+* Classe de l'objet WNum héritant de l'objet WText, qui sert à récupérer un numéro de téléphone.
+*/
 class WNum extends WText
 {
-    /**Constructeur**/
+    /**
+    * Méthode constructeur de l'objet WNum.
+    * @param name Contient le nom du Widget
+    * @param bloquage Définis si l'absence de valeur dans le champs est bloquant ou non 
+    * @param textDefaut Contient la valeur par défaut du champs du widget.
+    */
     public function __construct($name = 'Num', $bloquage = true, $textDefaut = 'Entrez votre numero de telephone ' )
     {
         /**Appel du constructeur de l'objet parent (WText)**/
         parent::__construct($bloquage, $textDefaut ,$name);
     }
-    /**Fonction Validation du widget**/
+    
+    /**
+    * Méthode de validation de l'objet WNum, test la conformité du numéro.
+    * @param val Contient la valeur entrée de le widget WNum.
+    * @param widget Contient l'objet widget.
+    */
     public function valider($val, $widget)
     {
         /**Test si vide et compare avec le booléen blocage**/

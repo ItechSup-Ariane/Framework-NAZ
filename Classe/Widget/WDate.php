@@ -5,8 +5,8 @@ namespace PhpWidget\Widget;
 use PhpWidget\Widget\Widget;
 
 /**
- * Classe contenant le widget de type Date.
- */
+* Classe contenant le widget de type Date heritant de Widget, sert à récupérer une date.
+*/
 class WDate extends Widget
 {
     /**
